@@ -1,1 +1,5 @@
-# Comp601_Wireshark_Force_RLO
+Comp 601 Wireshark Brute Force RLO
+
+The motivation for this project was to simplify the build process for setup for a blue team members.  Setup for DVWA (https://github.com/ethicalhack3r/DVWA) and Kali Linux (https://www.kali.org/) in virutal machines is well documented, but it is a large task for newcomers who are trying to concentrate on blue team concepts.  
+
+There are three parts to this excersize.  The Initial part will create the vulnerable web server host and kali linux qemu machines.  The second setup part involves copying the files from the upload_files folder to the clients and setting up aspects the virutal machines.  The scripting is based on properties of consistancy that one can use when assuming that you have a specific new machines of a particular version.  The thrid part is similuating the attack so it can be seen in wireshark.  The upload file "attack.sh" uses some curl commands and hydra to simulate a brute force attack against the DVWA server.  The "start_wireshark" script assumes the local user can run wireshark and will start wireshark with friendly settings in order to eliminate the normal network activities that is present on the host system.  
